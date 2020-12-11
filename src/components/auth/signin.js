@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import SignInForm from './signinForm.js'
-import PageTitle from '../pagetitle'
+
+import SignInForm from './signinForm';
+import PageTitle from '../pageTitle';
 
 class SignIn extends Component {
 
@@ -14,9 +15,8 @@ class SignIn extends Component {
                 <PageTitle className='sign-in__page-title' title='Login' />
                 <SignInForm onSubmit={this.onSubmit} className='sign-in__form' />
             </div>
-        );
+        )
     }
 }
 
-
-export default SignIn
+export default SignIn;

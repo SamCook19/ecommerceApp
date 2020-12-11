@@ -17,7 +17,6 @@
     & > * {
         grid-column: 1/-1;
     }
-
     &__email {
         grid-row: email-s/email-e;
     }
@@ -28,8 +27,6 @@
     &__line {
         grid-row: line-s/line-e;
         border-top: 1px solid #ccc;
-        
-
     }
     &__login {
         margin-top: 39px;
