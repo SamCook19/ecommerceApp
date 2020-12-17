@@ -8,33 +8,59 @@ class Shop extends Component {
     componentDidMount() {
         const headerLinks = [
             {
-                _id: 1,
+                _id: 0,
                 title: 'Login',
                 path: '/signin'
             }
         ]
-
         this.props.setHeaderLinks(headerLinks);
         this.props.fetchShopCategories();
+
+        // filter products with links
         this.props.fetchShopProducts();
-        // fetch shop products action creator
-        // fetch navbar links
-        // set the navbar links
-            // filter products with links
     }
+
+    shouldComponentUpdate(nextProps) {
+        if(this.props != nextProps) {
+            this.props.setNavbarLinks(nextProps.categories, (_id) => this.props.filterProductsWithCategoryId(_id));
+        }
+        return true
+
+    }
+
     render() {
+
         return (
             <div className='shop'>
-                {/* shop search bar component */}
-                {/* shop product component */}
-                {/* shop cart button  */}
+            {/* shop search bar */}
+            <div className='shop__products'>
+                    {
+                        this.props.filteredProducts.map(product => {
+                            return (
+                                <div key={product._id} className='shop-product'>
+                                    <div className='shop-product__title'>
+                                        {product.title}
+                                    </div>
+                                    <div className='shop-product__description'>
+                                        {product.description}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                {/* shop cart button */}
             </div>
-        );
+        )
     }
 }
 
 function mapStateToProps(state) {
-    return { state }
+    const { categories, filteredProducts } = state.shop;
+    return {
+        categories,
+        filteredProducts
+    } 
 }
 
 Shop = connect(mapStateToProps, actions)(Shop);
