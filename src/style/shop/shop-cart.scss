@@ -9,9 +9,7 @@
         grid-column: s/e;
         justify-self: end;
 
-        display: grid;
-        justify-items: center;
-        align-items: center;
+        
     }
 
     &__content {
@@ -21,8 +19,11 @@
 }
 
 .shop-cart {
-    &__toggle {
 
+    transition: all .3s ease;
+
+    &__toggle {
+        z-index: 6;
     }
     &__content {
         height: 675px;
@@ -39,6 +40,10 @@
     border-radius: 25px 0 0 25px;
     height: 40px;
     width: 76px;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .cart-content {
@@ -127,4 +132,8 @@
         font-weight: 600;
     }
 
+}
+
+.cart-hidden {
+    transform: translateX(520px);
 }
