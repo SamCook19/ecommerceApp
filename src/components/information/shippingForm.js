@@ -41,7 +41,6 @@ class ShippingForm extends Component {
                 placeholder='Zipcode'
                 name='zipcode'
                 component={FormInput}/>
-
                 <div className='shipping-form__line'></div>
                 <Field className='shipping-form__use-this-address'
                 onClick={() => history.push('/information/payment')}
