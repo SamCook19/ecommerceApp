@@ -6,9 +6,12 @@ import { FormInput, FormButton } from '../formFields';
 
 import history from '../../history';
 
+import OrderSummary from './orderSummary';
+
 class ShippingForm extends Component {
     render() {
         const { className, handleSubmit } = this.props;
+  
         return (
             <form onSubmit={handleSubmit} className={`${className} shipping-form`}>
                 <Field className='shipping-form__name'
@@ -17,13 +20,13 @@ class ShippingForm extends Component {
                 placeholder='Name'
                 name='name'
                 component={FormInput}/>
-                 <Field className='shipping-form__address'
+                <Field className='shipping-form__address'
                 type='address'
                 title='Street Address'
                 placeholder='Street Address'
                 name='address'
                 component={FormInput}/>
-                 <Field className='shipping-form__city'
+                <Field className='shipping-form__city'
                 type='city'
                 title='City'
                 placeholder='City'
@@ -35,12 +38,14 @@ class ShippingForm extends Component {
                 placeholder='State'
                 name='state'
                 component={FormInput}/>
-                 <Field className='shipping-form__zipcode'
+                <Field className='shipping-form__zipcode'
                 type='zipcode'
                 title='Zipcode'
                 placeholder='Zipcode'
                 name='zipcode'
                 component={FormInput}/>
+ 
+        
                 <div className='shipping-form__line'></div>
                 <Field className='shipping-form__use-this-address'
                 onClick={() => history.push('/information/payment')}
@@ -55,7 +60,8 @@ class ShippingForm extends Component {
                 name='back'
                 short={true}
                 component={FormButton}/>
-                </form>
+                <OrderSummary className='shipping-form__summary'/>
+            </form>
         )
     }
 }
