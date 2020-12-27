@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import PageTitle from '../pagetitle';
+import PageTitle from '../page-title';
 
-import AccountInformationForm from './accountInformationForm';
+import AccountInformationForm from './account-information-form';
 
 class AccountInformation extends Component {
     

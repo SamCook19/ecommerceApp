@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-import AccountInformation from './accountInformation';
-import PurchaseHistory from './purchaseHistory';
+import AccountInformation from './account-information';
+import PurchaseHistory from './purchase-history';
 
 class Account extends Component {
 

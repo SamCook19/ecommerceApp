@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import { reducer as form } from 'redux-form'; 
 
-import headerNavbar from './headernavbarReducer';
-import user from './userReducer';
-import shop from './shopReducer';
+import headerNavbar from './headernavbar-reducer';
+import user from './user-reducer';
+import shop from './shop-reducer';
 
 const rootReducer = combineReducers({
   form,

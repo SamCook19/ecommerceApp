@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { reduxForm, Field } from 'redux-form';
 
-import { FormInput, FormButton, LongGrayButton } from '../formFields';
+import { FormInput, FormButton, LongGrayButton } from '../form-fields';
 
 import history from '../../history';
 

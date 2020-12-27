@@ -4,11 +4,11 @@ import { reduxForm, Field } from 'redux-form';
 
 import { connect } from 'react-redux';
 
-import { FormInput, FormButton } from '../formFields';
+import { FormInput, FormButton } from '../form-fields';
 
 import history from '../../history';
-import OrderSummary from './orderSummary';
-import { UnderlinedTitle } from './infoHelp';
+import OrderSummary from './order-summary';
+import { UnderlinedTitle } from './info-help';
 
 class PaymentForm extends Component {
     render() {

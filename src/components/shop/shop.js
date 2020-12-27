@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
-import ShopSearchBar from './shopSearchBar';
-import ShopProduct from './shopProduct';
-import ShopCart from './shopCart';
-import CartButton from './cartButton';
+import ShopSearchBar from './shop-search-bar';
+import ShopProduct from './shop-product';
+import ShopCart from './shop-cart';
+import CartButton from './cart-button';
 
 class Shop extends Component {
 

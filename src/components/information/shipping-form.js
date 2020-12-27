@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 import { reduxForm, Field } from 'redux-form';
 
-import { FormInput, FormButton } from '../formFields';
+import { FormInput, FormButton } from '../form-fields';
 
 import history from '../../history';
 
-import OrderSummary from './orderSummary';
+import OrderSummary from './order-summary';
 
 class ShippingForm extends Component {
     render() {

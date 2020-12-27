@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GreenPriceTag from '../greenPriceTag';
+import GreenPriceTag from '../green-pricetag';
 
 class ReviewProduct extends Component {
     render() {

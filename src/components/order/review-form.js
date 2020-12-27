@@ -4,8 +4,8 @@ import { reduxForm, Field } from 'redux-form';
 
 import history from '../../history';
 
-import { FormButton } from '../formFields';
-import ReviewProducts from './reviewProducts';
+import { FormButton } from '../form-fields';
+import ReviewProducts from './review-products';
 
 class ReviewForm extends Component {
     render() {

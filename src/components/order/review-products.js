@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 
-import ReviewProduct from './reviewProduct';
+import ReviewProduct from './review-product';
 
 class ReviewProducts extends Component {
     render() {

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import PageTitle from '../pageTitle';
+import PageTitle from '../page-title';
 
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-import ShippingForm from './shippingForm';
+import ShippingForm from './shipping-form';
 
 class Shipping extends Component {
 

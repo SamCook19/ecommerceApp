@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Quantity from '../quantity';
-import GreenPriceTag from '../greenPriceTag';
+import GreenPriceTag from '../green-pricetag';
 
 class CartProduct extends Component {
     render() {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { UnderlinedTitle, InfoTitle } from './infoHelp';
+import { UnderlinedTitle, InfoTitle } from './info-help';
 
 import { connect } from 'react-redux';
 

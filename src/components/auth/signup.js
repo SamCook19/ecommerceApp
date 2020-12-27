@@ -1,8 +1,8 @@
 
 import React, { Component } from 'react';
 
-import SignUpForm from './signupForm';
-import PageTitle from '../pageTitle';
+import SignUpForm from './signup-form';
+import PageTitle from '../page-title';
 
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
