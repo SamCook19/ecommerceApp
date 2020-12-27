@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-import PageTitle from '../pagetitle';
+import PageTitle from '../pageTitle';
 import ReviewForm from './reviewForm';
 
 class Review extends Component {
